@@ -27,7 +27,7 @@ Then, run it as a usual Python file
 ## Documentation
 
 For a better understanding of the project, read the documention, for getting valuable insights of the script, in order to be custom modified to your needs😎
-[Documentation](https://linktodocumentation)
+[Documentation](https://app.swimm.io/workspaces/uBXb4j4GEF2TI8oOi0Et/repos/Z2l0aHViJTNBJTNBd2ViX3NjcmFwcGVyJTNBJTNBYWRyaWFuYmFsdGFn/branch/main/docs/new?template=pqkt5&draft=ZDNndTkza3I=)
 
 ## Authors
 
