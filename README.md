@@ -4,11 +4,10 @@ This is a Python web scrapper, for Amazon, that will return several results base
 
 ## Environment Variables
 
-To run this project, you will need to add the following environment variables to your .env file
+To run this project, you will need to add the following environment variables to your .env file, with your User Agent info.
+The info can be found on [whatismybrowser.com](https://www.whatismybrowser.com/)
 
-`API_KEY`
-
-`ANOTHER_API_KEY`
+`USER_AGENT`
 
 ## Acknowledgements
 
