@@ -2,6 +2,24 @@ from bs4 import BeautifulSoup
 import requests
 from dotenv import load_dotenv
 import os
+
+"""
++++++++++ make the text bold, underline, color ++++++++
+example usage:
+print(BOLD, RED + "This is bold text." + RESET)
+print(UNDERLINE + "This is underlined text." + RESET)
+"""
+# Color codes
+RESET = "\033[0m"      # Reset all formatting
+RED = "\033[91m"       # Red text
+GREEN = "\033[92m"     # Green text
+YELLOW = "\033[93m"    # Yellow text
+BLUE = "\033[94m"      # Blue text
+# bold, underline
+BOLD = "\033[1m"
+UNDERLINE = "\033[4m"
+
+
 # load the environment variables
 load_dotenv('.env')
 # get the user agent from the environment variables
@@ -68,17 +86,17 @@ if reply == 'yes':
         link = product.find('a', class_='a-link-normal', href=True)
 
         if brand and title and price and link:
-            print("Product Brand:", brand.text)
-            print("Product Title:", title.text)
+            print(RED + "Product Brand:" + RESET, GREEN, BOLD + brand.text + RESET)
+            print(RED + "Product Title:" + RESET, BOLD + title.text + RESET)
             """
             need to add the link to the product link, because the link is not complete, it is missing the domain name, so we need to add the domain name to the link
-            'https://www.amazon.com' + link['href'] - link of each product 
+            'https://www.amazon.com' + link['href']  - link of each product 
             // link is a dictionary, so we need to use the key to get the value
             """
-            print("Product Link:", 'https://www.amazon.com' + link['href'])
-            print("Product Price:", price.text)
+            print(YELLOW + "Product Link:" + RESET, BLUE, UNDERLINE + 'https://www.amazon.com' + link['href'] + RESET)
+            print(RED + "Product Price:" + RESET, GREEN, BOLD + price.text + RESET)
             print("If you want to open a link from the terminal, type 'open' + the link")
-            print("========================================")
+            print(YELLOW + "========================================" + RESET)
 
 else:
     print("Exiting the web scrapper...")
