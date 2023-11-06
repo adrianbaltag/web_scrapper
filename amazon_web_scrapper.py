@@ -95,7 +95,7 @@ if reply == 'yes':
             """
             print(YELLOW + "Product Link:" + RESET, BLUE, UNDERLINE + 'https://www.amazon.com' + link['href'] + RESET)
             print(RED + "Product Price:" + RESET, GREEN, BOLD + price.text + RESET)
-            print("If you want to open a link from the terminal, type 'open' + the link")
+            print("If you want to open a link from the terminal, move the cursor to the link, and press 'cmd' + 'click' to open the link in the browser")
             print(YELLOW + "========================================" + RESET)
 
 else:
